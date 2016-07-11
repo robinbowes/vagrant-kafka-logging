@@ -85,6 +85,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.hostmanager.ignore_private_ip = false
   config.hostmanager.include_offline = true
 
+  config.puppet_install.puppet_version = '4.5.2'
+
   config.vm.provision "puppet" do |puppet|
     puppet.environment_path = "puppet/environments"
     puppet.environment = "default"
