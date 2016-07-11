@@ -1,6 +1,19 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
+# Make sure all required plugins are installed
+# Taken from: https://michaelheap.com/vagrant-require-installed-plugins/
+[
+  { :name => "vagrant-hostmanager", :version => ">= 1.8.2" },
+  { :name => "vagrant-librarian-puppet", :version => ">= 0.9.2" },
+  { :name => "vagrant-puppet-install", :version => ">= 4.1.0" },
+  { :name => "vagrant-vbguest", :version => ">= 0.12.0"}
+].each do |plugin|
+  if not Vagrant.has_plugin?(plugin[:name], plugin[:version])
+    raise "#{plugin[:name]} #{plugin[:version]} is required. Please run `vagrant plugin install #{plugin[:name]}`"
+  end
+end
+
 # Vagrantfile API/syntax version. Don't touch unless you know what you're doing!
 VAGRANTFILE_API_VERSION = "2"
 
