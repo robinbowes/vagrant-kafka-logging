@@ -1,2 +1,4 @@
 .vagrant
 .ruby-version
+puppet/environments/default/modules/*
+!puppet/environments/default/modules/.gitkeep

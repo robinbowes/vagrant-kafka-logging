@@ -3,14 +3,28 @@ FORGE
   specs:
     deric-zookeeper (0.5.5)
       puppetlabs-stdlib (< 5.0.0, >= 2.3.3)
+    duritong-sysctl (0.0.11)
     puppetlabs-stdlib (4.12.0)
 
-PATH
-  remote: ../../modules/role
+GIT
+  remote: git@github.com:robinbowes/vagrant-kafka-logging.git
+  path: puppet/modules/profile
+  ref: master
+  sha: 3da5946883f58e66881d5eb16d3b1ceb5a854c18
   specs:
-    yo61-role (0.0.1)
+    yo61-profile (0.1.0)
+      deric-zookeeper (>= 0)
+      duritong-sysctl (>= 0)
+
+GIT
+  remote: git@github.com:robinbowes/vagrant-kafka-logging.git
+  path: puppet/modules/role
+  ref: master
+  sha: 3da5946883f58e66881d5eb16d3b1ceb5a854c18
+  specs:
+    yo61-role (0.1.0)
+      yo61-profile (>= 0)
 
 DEPENDENCIES
-  deric-zookeeper (>= 0)
   yo61-role (>= 0)
 
