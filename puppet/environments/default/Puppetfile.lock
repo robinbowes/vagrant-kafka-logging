@@ -1,0 +1,16 @@
+FORGE
+  remote: https://forgeapi.puppetlabs.com
+  specs:
+    deric-zookeeper (0.5.5)
+      puppetlabs-stdlib (< 5.0.0, >= 2.3.3)
+    puppetlabs-stdlib (4.12.0)
+
+PATH
+  remote: ../../modules/role
+  specs:
+    yo61-role (0.0.1)
+
+DEPENDENCIES
+  deric-zookeeper (>= 0)
+  yo61-role (>= 0)
+

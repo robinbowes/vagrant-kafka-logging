@@ -1,0 +1,30 @@
+{
+  "name": "role",
+  "version": "0.1.0",
+  "author": "Robin Bowes",
+  "summary": "Contains roles used in kafka-logging vagrant environment",
+  "license": "Apache-2.0",
+  "source": "git@github.com:robinbowes/vagrant-kafka-logging.git",
+  "project_page": "https://github.com/robinbowes/vagrant-kafka-logging",
+  "issues_url": "https://github.com/robinbowes/vagrant-kafka-logging/issues",
+  "dependencies": [],
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "CentOS",
+      "operatingsystemrelease": [
+        "7"
+      ]
+    }
+  ],
+  "requirements": [
+    {
+      "name": "pe",
+      "version_requirement": ">= 3.7.0 < 2016.3.0"
+    },
+    {
+      "name": "puppet",
+      "version_requirement": ">= 3.0.0 < 5.0.0"
+    }
+  ],
+  "description": "Contains roles used in kafka-logging vagrant environment"
+}

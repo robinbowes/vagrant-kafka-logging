@@ -1,0 +1,8 @@
+#!/usr/bin/env ruby
+#^syntax detection
+
+forge "https://forgeapi.puppetlabs.com"
+
+# Only need to add top-level role classes.
+# All other classes are recursively included
+mod 'deric-zookeeper'
