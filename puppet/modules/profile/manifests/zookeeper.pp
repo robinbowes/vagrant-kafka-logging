@@ -8,7 +8,7 @@ class profile::zookeeper {
       initialize_datastore => true,
       servers              => ['zookeeper.int.yo61.net'],
       install_java         => true,
-      java_package         => 'openjdk-7-jre-headless',
+      java_package         => 'java-1.8.0-openjdk-headless',
   }
 
 }
