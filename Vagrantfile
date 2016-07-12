@@ -103,7 +103,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.librarian_puppet.puppetfile_dir = "puppet/environments/default"
   # placeholder_filename defaults to .PLACEHOLDER
   config.librarian_puppet.placeholder_filename = ".gitkeep"
-  config.librarian_puppet.use_v1_api  = '0' # Check https://github.com/rodjek/librarian-puppet#how-to-use
+  config.librarian_puppet.use_v1_api  = '1' # Check https://github.com/rodjek/librarian-puppet#how-to-use
   config.librarian_puppet.destructive = 'false' # Check https://github.com/rodjek/librarian-puppet#how-to-use
 
   config.vm.provision "puppet" do |puppet|
