@@ -1,26 +1,40 @@
 FORGE
   remote: https://forgeapi.puppetlabs.com
   specs:
+    camptocamp-systemd (0.2.2)
     deric-zookeeper (0.5.5)
       puppetlabs-stdlib (< 5.0.0, >= 2.3.3)
     duritong-sysctl (0.0.11)
+    puppet-archive (0.5.1)
+      puppetlabs-pe_gem (>= 0.0.1)
+      puppetlabs-stdlib (>= 2.2.1)
+    puppet-kafka (2.0.0)
+      camptocamp-systemd (< 0.3.0, >= 0.2.2)
+      deric-zookeeper (>= 0.5.1)
+      puppet-archive (>= 0.5.0)
+      puppetlabs-java (>= 1.4.2)
+      puppetlabs-stdlib (>= 4.11.0)
+    puppetlabs-java (1.6.0)
+      puppetlabs-stdlib (< 5.0.0, >= 2.4.0)
+    puppetlabs-pe_gem (0.2.0)
     puppetlabs-stdlib (4.12.0)
 
 GIT
   remote: git@github.com:robinbowes/vagrant-kafka-logging.git
   path: puppet/modules/profile
   ref: master
-  sha: 3da5946883f58e66881d5eb16d3b1ceb5a854c18
+  sha: bcc5839171e56b22c3e9baf6639a32af51415394
   specs:
     yo61-profile (0.1.0)
       deric-zookeeper (>= 0)
       duritong-sysctl (>= 0)
+      puppet-kafka (>= 0)
 
 GIT
   remote: git@github.com:robinbowes/vagrant-kafka-logging.git
   path: puppet/modules/role
   ref: master
-  sha: 3da5946883f58e66881d5eb16d3b1ceb5a854c18
+  sha: bcc5839171e56b22c3e9baf6639a32af51415394
   specs:
     yo61-role (0.1.0)
       yo61-profile (>= 0)
