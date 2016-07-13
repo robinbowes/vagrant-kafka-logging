@@ -5,12 +5,13 @@ class profile::kafka {
     version       => '0.10.0.0',
     scala_version => '2.11',
     install_java  => true,
-    config        => {
-      'inter.broker.protocol.version' => '0.10.0.0',
-    }
   }
   class { 'kafka::broker':
-    config => { 'broker.id' => '0', 'zookeeper.connect' => 'zookeeper.int.yo61.net:2181' }
+    config => {
+      'broker.id'                     => '0',
+      'zookeeper.connect'             => 'zookeeper.int.yo61.net:2181',
+      'inter.broker.protocol.version' => '0.10.0.0',
+    },
   }
 
 }
