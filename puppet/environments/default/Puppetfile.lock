@@ -23,7 +23,7 @@ GIT
   remote: git@github.com:robinbowes/vagrant-kafka-logging.git
   path: puppet/modules/profile
   ref: master
-  sha: 4b04d896f0e47f6bdd67f5da3e740fee8f9d10ff
+  sha: df02dbbf2d2b6554377158eb147dd4edd3d986e9
   specs:
     yo61-profile (0.1.0)
       deric-zookeeper (>= 0)
@@ -34,7 +34,7 @@ GIT
   remote: git@github.com:robinbowes/vagrant-kafka-logging.git
   path: puppet/modules/role
   ref: master
-  sha: 4b04d896f0e47f6bdd67f5da3e740fee8f9d10ff
+  sha: df02dbbf2d2b6554377158eb147dd4edd3d986e9
   specs:
     yo61-role (0.1.0)
       yo61-profile (>= 0)
